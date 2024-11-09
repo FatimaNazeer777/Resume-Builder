@@ -6,17 +6,19 @@
     justify-content: center;
     align-items: center;
     padding: 40px 0;
+    background-color: #181818; /* Dark background */
 }
 
 .mainDiv form {
     width: 80%;
     min-height: 100vh;
-    background-color: white;
+    background-color: #252525; /* Dark form background */
     border-radius: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slight shadow for contrast */
 }
 
 .headline {
@@ -45,9 +47,11 @@
     min-height: 60px;
     outline: none;
     border-radius: 20px;
-    border: 1px solid gray;
+    border: 1px solid #555; /* Darker border */
     padding: 0 10px;
     font-size: 18px;
+    background-color: #333; /* Dark input background */
+    color: white; /* Light text */
 }
 
 .input-label {
@@ -62,6 +66,7 @@
 
 label {
     font-size: 20px;
+    color: #e0e0e0; /* Light text for labels */
 }
 
 .textarea-label {
@@ -80,9 +85,11 @@ form textarea {
     resize: none;
     outline: none;
     border-radius: 20px;
-    border: 1px solid gray;
+    border: 1px solid #555; /* Darker border */
     padding: 0 10px;
     font-size: 18px;
+    background-color: #333; /* Dark textarea background */
+    color: white; /* Light text */
 }
 
 .input {
@@ -91,9 +98,11 @@ form textarea {
     resize: none;
     outline: none;
     border-radius: 20px;
-    border: 1px solid gray;
+    border: 1px solid #555; /* Darker border */
     padding: 0 10px;
     font-size: 18px;
+    background-color: #333; /* Dark input background */
+    color: white; /* Light text */
 }
 
 .education-section,
@@ -134,9 +143,11 @@ form textarea {
     min-height: 60px;
     outline: none;
     border-radius: 20px;
-    border: 1px solid gray;
+    border: 1px solid #555; /* Darker border */
     padding: 0 10px;
     font-size: 18px;
+    background-color: #333; /* Dark input background */
+    color: white; /* Light text */
 }
 
 .education-section label,
@@ -144,6 +155,7 @@ form textarea {
 .experience-section label,
 .skills-section label {
     font-size: 20px;
+    color: #e0e0e0; /* Light text for labels */
 }
 
 /* Button Styles */
@@ -156,6 +168,7 @@ button {
     font-size: 20px;
     transition: all 0.3s linear;
     outline: none;
+    border: none;
 }
 
 button:hover {
@@ -279,7 +292,6 @@ button:hover {
         font-size: 16px;
     }
 }
-
 
 .button-container {
     width: 100%;
