@@ -408,10 +408,6 @@ p {
         align-items: center;
     }
 
-    .logo {
-        display: none;
-    }
-
     .navigation {
         flex-direction: row;
         gap: 10px;
