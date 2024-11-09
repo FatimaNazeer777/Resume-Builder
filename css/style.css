@@ -212,8 +212,10 @@ body {
     margin-bottom: 20px;
 }
 
-.education {
-    color: white;
+.education,
+.education h4 {
+    color: rgb(204, 204, 204);
+    font-weight: normal;
 }
 
 .contact-info ul {
@@ -424,7 +426,7 @@ p {
 
     .navigation a {
         margin: 0 auto;
-        font-size: 13px;
+        font-size: 11px;
     }
 
     .profileText .imgBox {
