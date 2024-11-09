@@ -46,13 +46,6 @@ nav .navigation {
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
-/* Hover effects for links */
-.navigation a:hover {
-    color: #ff6f61;
-    /* Coral red hover effect */
-    transform: translateY(-2px);
-    /* Small lift on hover */
-}
 
 /* 
 /* Optional: Hide navigation for mobile or small screens */
