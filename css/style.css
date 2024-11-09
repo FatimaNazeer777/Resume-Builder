@@ -408,6 +408,9 @@ p {
         align-items: center;
     }
 
+    .logo {
+        margin-right: 10px;
+    }
     .navigation {
         flex-direction: row;
         gap: 10px;
