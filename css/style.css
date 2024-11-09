@@ -76,6 +76,66 @@ body {
     font-family: 'Arial', sans-serif;
     /* Clean, modern font */
 }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset and Font Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navbar Styles */
+nav {
+    width: 100%;
+    height: 12vh;
+    background-color: #2a2a3a; /* Dark gray background for the navbar */
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+nav .logo img {
+    width: 60px;
+}
+
+nav .navigation {
+    display: flex;
+    gap: 30px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #e0e0e0; /* Light gray text for navbar */
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: color 0.3s ease, transform 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.navigation a:hover {
+    color: #7c85d1; /* Soft purple-blue hover effect */
+    transform: translateY(-2px);
+    letter-spacing: 1px;
+}
+
+/* Body Styling */
+body {
+    background-color: #fff; /* White background for the body */
+    color: #333333; /* Dark text for readability */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
 
 /* Container */
 .container {
@@ -83,19 +143,17 @@ body {
     width: 100%;
     max-width: 1000px;
     min-height: 1000px;
-    background-color: #212121;
-    /* Dark background */
+    background-color: #f8f8f8; /* Light gray background for container */
     margin: 50px;
     display: grid;
     grid-template-columns: 1fr 2fr;
     box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
 }
 
-/* Left side styling */
+/* Left Side */
 .container .left_side {
     position: relative;
-    background-color: #2c2c2c;
-    /* Slightly lighter dark gray */
+    background-color: #2c2c2c; /* Blue background for left side */
     padding: 40px;
 }
 
@@ -127,8 +185,7 @@ body {
 }
 
 .profileText h2 {
-    color: #f1f1f1;
-    /* Light color for text */
+    color: #f1f1f1; /* Light text color */
     font-size: 1.5em;
     margin-top: 20px;
     text-transform: uppercase;
@@ -148,11 +205,15 @@ body {
 }
 
 .contact-info .title {
-    color: #fff;
+    color: #fff; /* White text for section titles */
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: 1px;
     margin-bottom: 20px;
+}
+
+.education {
+    color: white;
 }
 
 .contact-info ul {
@@ -170,13 +231,11 @@ body {
     display: inline-block;
     width: 30px;
     font-size: 17px;
-    color: #b0e0ec;
-    /* Soft light blue */
+    color: #b0e0ec; /* Soft light blue */
 }
 
 .contact-info ul li span {
-    color: #d3d3d3;
-    /* Light gray */
+    color: #d3d3d3; /* Light gray for text */
     font-weight: 300;
 }
 
@@ -187,54 +246,15 @@ body {
 }
 
 .contact-info ul li a.text:hover {
-    color: #7c85d1;
-    /* Light blue on hover */
-}
-
-/* Education */
-.contact-info.education h5 {
-    color: #9a9a9a;
-    /* Light gray for year */
-    font-weight: 500;
-}
-
-.contact-info.education h4:nth-child(2) {
-    color: #f1f1f1;
-    font-weight: 500;
-}
-
-.contact-info.education h4 {
-    color: #d3d3d3;
-    /* Lighter text for school names */
-    font-weight: 300;
-}
-
-/* Language */
-.contact-info.language .percent {
-    position: relative;
-    width: 100%;
-    height: 6px;
-    background-color: #d3d3d3;
-    /* Light gray background for progress bars */
-    display: block;
-    margin-top: 5px;
-}
-
-.contact-info.language .percent div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background-color: #8b4f96;
-    /* Dark purple for progress bars */
+    color: #7c85d1; /* Soft purple-blue on hover */
 }
 
 /* Right Side */
 .container .right_side {
     position: relative;
-    background-color: #303030;
-    /* Dark gray background for right side */
+    background-color: #e5e4e4; /* White background for right side */
     padding: 40px;
+    color: #333333; /* Dark text for readability */
 }
 
 /* About */
@@ -247,16 +267,14 @@ body {
 }
 
 .title2 {
-    color: #f1f1f1;
-    /* Light color for titles */
+    color: #333333; /* Dark color for titles */
     text-transform: capitalize;
     letter-spacing: 1px;
     margin-bottom: 10px;
 }
 
 p {
-    color: #e0e0e0;
-    /* Slightly lighter gray for body text */
+    color: #666666; /* Slightly lighter gray for body text */
 }
 
 /* Experience */
@@ -272,15 +290,13 @@ p {
 
 .about .box .year_company h5 {
     text-transform: uppercase;
-    color: #848c90;
-    /* Gray for years */
+    color: #848c90; /* Gray for year labels */
     font-weight: 600;
 }
 
 .about .box .text h4 {
     text-transform: uppercase;
-    color: #d3d3d3;
-    /* Light gray for job titles */
+    color: #333333; /* Dark gray for job titles */
     font-size: 16px;
 }
 
@@ -296,15 +312,13 @@ p {
 
 .skills .box h4 {
     text-transform: uppercase;
-    color: #a0a0a0;
-    /* Light gray for skill names */
+    color: #333333; /* Dark color for skill names */
     font-weight: 500;
 }
 
 .skills .box .percent2 {
     position: relative;
-    background-color: #444444;
-    /* Darker background for progress bars */
+    background-color: #dddddd; /* Light gray background for progress bars */
     width: 100%;
     border-radius: 10px;
     height: 10px;
@@ -316,8 +330,25 @@ p {
     top: 0;
     left: 0;
     height: 100%;
-    background-color: #7a327d;
-    /* Darker pink for skills progress */
+    background-color: #007acc; /* Blue for progress bars */
+}
+
+/* Language */
+.contact-info.language .percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background-color: #dddddd; /* Light gray background for progress bars */
+    display: block;
+    margin-top: 5px;
+}
+
+.contact-info.language .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #007acc; /* Blue for progress bars */
 }
 
 /* Buttons */
@@ -328,8 +359,7 @@ p {
 
 .download-btn,
 .edit-btn {
-    background-color: #7a4d93;
-    /* Dark purple for buttons */
+    background-color: #007acc; /* Blue for buttons */
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -339,19 +369,16 @@ p {
 
 .download-btn:hover,
 .edit-btn:hover {
-    background-color: #9b69a7;
-    /* Slightly lighter purple on hover */
+    background-color: #005fa3; /* Darker blue on hover */
 }
 
 .download-btn {
-    background-color: #7a4d93;
+    background-color: #007acc;
 }
 
 .edit-btn {
-    background-color: #9c187b;
-    /* Slightly different color for edit button */
+    background-color: #005fa3; /* Darker blue for the edit button */
 }
-
 
 @media (max-width: 768px) {
     nav {

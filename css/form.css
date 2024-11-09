@@ -6,21 +6,22 @@
     justify-content: center;
     align-items: center;
     padding: 40px 0;
-    background-color: #181818; /* Dark background */
+    background-color: #f0f0f0; /* Light gray background */
 }
 
 .mainDiv form {
     width: 80%;
     min-height: 100vh;
-    background-color: #252525; /* Dark form background */
-    border-radius: 40px;
+    background-color: #ffffff; /* White form background */
+    border-radius: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px 5px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slight shadow for contrast */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for contrast */
 }
 
+/* Headline Style */
 .headline {
     width: 95%;
     min-height: 50px;
@@ -29,11 +30,14 @@
     display: flex;
     align-items: center;
     padding: 0 5px;
-    background-color: #b6316f;
+    background-color: #6c757d; /* Gray background for headline */
     border: 1px solid transparent;
     color: white;
+    font-size: 18px;
+    font-weight: 600;
 }
 
+/* Input Group */
 .input-group {
     width: 95%;
     min-height: 150px;
@@ -47,11 +51,11 @@
     min-height: 60px;
     outline: none;
     border-radius: 20px;
-    border: 1px solid #555; /* Darker border */
-    padding: 0 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    padding: 0 15px;
     font-size: 18px;
-    background-color: #333; /* Dark input background */
-    color: white; /* Light text */
+    background-color: #f7f7f7; /* Light gray input background */
+    color: #333; /* Dark text for contrast */
 }
 
 .input-label {
@@ -65,10 +69,11 @@
 }
 
 label {
-    font-size: 20px;
-    color: #e0e0e0; /* Light text for labels */
+    font-size: 18px;
+    color: #555; /* Dark gray text for labels */
 }
 
+/* Textarea Styling */
 .textarea-label {
     width: 100%;
     min-height: 100%;
@@ -85,26 +90,14 @@ form textarea {
     resize: none;
     outline: none;
     border-radius: 20px;
-    border: 1px solid #555; /* Darker border */
-    padding: 0 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    padding: 0 15px;
     font-size: 18px;
-    background-color: #333; /* Dark textarea background */
-    color: white; /* Light text */
+    background-color: #f7f7f7; /* Light gray textarea background */
+    color: #333; /* Dark text */
 }
 
-.input {
-    width: 100%;
-    min-height: 60px;
-    resize: none;
-    outline: none;
-    border-radius: 20px;
-    border: 1px solid #555; /* Darker border */
-    padding: 0 10px;
-    font-size: 18px;
-    background-color: #333; /* Dark input background */
-    color: white; /* Light text */
-}
-
+/* Section Styling (Education, Skills, Language, Experience) */
 .education-section,
 .language-section,
 .experience-section,
@@ -143,19 +136,19 @@ form textarea {
     min-height: 60px;
     outline: none;
     border-radius: 20px;
-    border: 1px solid #555; /* Darker border */
-    padding: 0 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    padding: 0 15px;
     font-size: 18px;
-    background-color: #333; /* Dark input background */
-    color: white; /* Light text */
+    background-color: #f7f7f7; /* Light gray input background */
+    color: #333; /* Dark text */
 }
 
 .education-section label,
 .language-section label,
 .experience-section label,
 .skills-section label {
-    font-size: 20px;
-    color: #e0e0e0; /* Light text for labels */
+    font-size: 18px;
+    color: #555; /* Dark gray text for labels */
 }
 
 /* Button Styles */
@@ -163,26 +156,28 @@ button {
     width: 70%;
     min-height: 60px;
     border-radius: 20px;
-    background-color: #790f62;
+    background-color: #6c757d; /* Gray button background */
     color: white;
     font-size: 20px;
-    transition: all 0.3s linear;
+    transition: all 0.3s ease-in-out;
     outline: none;
     border: none;
 }
 
 button:hover {
-    background-color: rgb(134, 65, 98);
+    background-color: #5a6268; /* Darker gray on hover */
     color: white;
-    border-color: #7c374c;
+    border-color: #4e555b;
 }
 
+/* Headline Hover Effects */
 .headline:hover {
-    transition: all 0.3s linear;
-    background-color: rgb(233, 101, 193);
+    transition: all 0.3s ease-in-out;
+    background-color: #5a6268; /* Darker gray when hovered */
     color: white;
-    border-color: #d44fb8;
+    border-color: #4e555b;
 }
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {
